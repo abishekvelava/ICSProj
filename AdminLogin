@@ -1,0 +1,46 @@
+THIS IS HTML FILE
+<html>
+<head>
+<title>Admin</title></head>
+
+</script>
+<body>
+<h1><center>Admin Login</center></h1>
+<form name="admin" action="ad1.jsp" method="post">
+<center>
+
+<br>
+<br>
+<br>
+username:<input type="text" name="adminname" required><br>
+Password:<input type="password" name="adminpass" required><br>
+<input type=submit value="submit"><input type="reset" name="clear">
+</center>
+</form>
+</body>
+<html>
+
+THIS IS JSP FILE
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String name=request.getParameter("adminname");
+String pass=request.getParameter("adminpass");
+if(name.equals("abishek")&(pass.equals("1234abi")))
+{
+	out.println("welcome: "+name);
+}
+else
+	out.println("Invalid User");
+		
+%>
+</body>
+</html>
