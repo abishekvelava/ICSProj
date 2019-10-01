@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>patient reg</title>
+<center><h2>Patient Registration</h2></head></center>
+</head><hr>
+<body bgcolor="cyan">
+   <center>
+      <form >
+       <table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2">
+
+        <tr>
+         <td>Name :</td> <td><input type="text" name="name"></td><br>
+        </tr>
+	<tr>
+         <td>Password :</td> <td><input type="password" name="pwd"></td><br>
+        </tr>
+        <tr>
+         <td>Email :</td> <td><input type="text" name="email"></td><br>
+        </tr>
+        <tr>
+         <td>D.O.B:</td> <td><input type="date" name="bday"></td><br>
+        </tr>
+	<tr>
+	  <td>Postal Address</td>
+	  <td><input type="text" name="paddress" id="paddress" size="30"></td>
+	</tr>
+	<tr><td>Gender:</td>
+	  <td><input type="radio" name="gender" value="male"> Male
+	  <input type="radio" name="gender" value="female"> Female
+  	  <input type="radio" name="gender" value="other"> Other</td>
+	</tr>
+	<tr>
+	  <td>MobileNo</td>
+	  <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+	</tr>
+        <tr>
+         <td><input type="submit" value="REGISTER"></td>
+        </tr>
+       </table>
+      </form></center>
+</body></html>
